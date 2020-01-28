@@ -15,6 +15,9 @@
 		E76BBD2D23DFAF9A00132B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BBD2B23DFAF9A00132B02 /* LaunchScreen.storyboard */; };
 		E76BBD3823DFAF9A00132B02 /* tictactoeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BBD3723DFAF9A00132B02 /* tictactoeTests.swift */; };
 		E76BBD4323DFAF9B00132B02 /* tictactoeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BBD4223DFAF9B00132B02 /* tictactoeUITests.swift */; };
+		E76BBD5323DFB05300132B02 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = E76BBD5023DFB05200132B02 /* circle.png */; };
+		E76BBD5423DFB05300132B02 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = E76BBD5123DFB05200132B02 /* cross.png */; };
+		E76BBD5523DFB05300132B02 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = E76BBD5223DFB05300132B02 /* board.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E76BBD3E23DFAF9B00132B02 /* tictactoeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tictactoeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76BBD4223DFAF9B00132B02 /* tictactoeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoeUITests.swift; sourceTree = "<group>"; };
 		E76BBD4423DFAF9B00132B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E76BBD5023DFB05200132B02 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = SOURCE_ROOT; };
+		E76BBD5123DFB05200132B02 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = SOURCE_ROOT; };
+		E76BBD5223DFB05300132B02 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				E76BBD2423DFAF9800132B02 /* ViewController.swift */,
 				E76BBD2623DFAF9800132B02 /* Main.storyboard */,
 				E76BBD2923DFAF9A00132B02 /* Assets.xcassets */,
+				E76BBD5223DFB05300132B02 /* board.png */,
+				E76BBD5023DFB05200132B02 /* circle.png */,
+				E76BBD5123DFB05200132B02 /* cross.png */,
 				E76BBD2B23DFAF9A00132B02 /* LaunchScreen.storyboard */,
 				E76BBD2E23DFAF9A00132B02 /* Info.plist */,
 			);
@@ -232,9 +241,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76BBD5423DFB05300132B02 /* cross.png in Resources */,
 				E76BBD2D23DFAF9A00132B02 /* LaunchScreen.storyboard in Resources */,
+				E76BBD5523DFB05300132B02 /* board.png in Resources */,
 				E76BBD2A23DFAF9A00132B02 /* Assets.xcassets in Resources */,
 				E76BBD2823DFAF9800132B02 /* Main.storyboard in Resources */,
+				E76BBD5323DFB05300132B02 /* circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
