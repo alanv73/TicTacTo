@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var player = 1 // cross
+    var nextPlayer = 1 // cross
     var board = [0,0,0,0,0,0,0,0,0]
-    let winners = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
-    var playing = true
+    let lines = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
+    var inPlay = true
 
     @IBOutlet weak var btnPlayAgain: UIButton!
     @IBOutlet weak var lblGameResult: UILabel!
@@ -24,23 +24,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func boardClicked(_ sender: AnyObject) {
-        if (board[sender.tag - 1] == 0 && playing) {
-            board[sender.tag - 1] = player
-            if (player == 1) {
+        if (board[sender.tag - 1] == 0 && inPlay) {
+            board[sender.tag - 1] = nextPlayer
+            if (nextPlayer == 1) {
                 sender.setImage(UIImage(named: "cross.png"), for: UIControl.State())
-                player = 2
+                nextPlayer = 2
             } else {
                 sender.setImage(UIImage(named: "circle.png"), for: UIControl.State())
-                player = 1
+                nextPlayer = 1
             }
         }
         
-        for win in winners {
-            if board[win[0]] != 0 &&
-                board[win[0]] == board[win[1]] &&
-                board[win[1]] == board[win[2]]{
-                    playing = false
-                if board[win[0]] == 1 {
+        for square in lines {
+            if board[square[0]] != 0 &&
+                board[square[0]] == board[square[1]] &&
+                board[square[1]] == board[square[2]]{
+                    inPlay = false
+                if board[square[0]] == 1 {
                     //cross wins
                     lblGameResult.text = "Player X wins!"
                 } else {
@@ -51,16 +51,16 @@ class ViewController: UIViewController {
             }
         }
         
-        playing = false
+        inPlay = false
         
         for i in board {
             if i == 0 {
-                playing = true
+                inPlay = true
                 break
             }
         }
         
-        if playing == false {
+        if inPlay == false {
             lblGameResult.text = "Draw Game!"
             gameEnd()
         }
@@ -68,8 +68,8 @@ class ViewController: UIViewController {
     
     @IBAction func playAgainClicked(_ sender: Any) {
         board = [0,0,0,0,0,0,0,0,0]
-        playing = true
-        player = 1
+        inPlay = true
+        nextPlayer = 1
         
         btnPlayAgain.isHidden = true
         lblGameResult.isHidden = true
@@ -119,10 +119,6 @@ class ViewController: UIViewController {
                     }
                 )
         )
-        
-        
     }
-    
-
 }
 
