@@ -18,6 +18,7 @@
 		E76BBD5323DFB05300132B02 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = E76BBD5023DFB05200132B02 /* circle.png */; };
 		E76BBD5423DFB05300132B02 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = E76BBD5123DFB05200132B02 /* cross.png */; };
 		E76BBD5523DFB05300132B02 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = E76BBD5223DFB05300132B02 /* board.png */; };
+		E76BBD5723E1055900132B02 /* tictactoe.gif in Resources */ = {isa = PBXBuildFile; fileRef = E76BBD5623E1055900132B02 /* tictactoe.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E76BBD5023DFB05200132B02 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = SOURCE_ROOT; };
 		E76BBD5123DFB05200132B02 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = SOURCE_ROOT; };
 		E76BBD5223DFB05300132B02 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = SOURCE_ROOT; };
+		E76BBD5623E1055900132B02 /* tictactoe.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tictactoe.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E76BBD2423DFAF9800132B02 /* ViewController.swift */,
 				E76BBD2623DFAF9800132B02 /* Main.storyboard */,
 				E76BBD2923DFAF9A00132B02 /* Assets.xcassets */,
+				E76BBD5623E1055900132B02 /* tictactoe.gif */,
 				E76BBD5223DFB05300132B02 /* board.png */,
 				E76BBD5023DFB05200132B02 /* circle.png */,
 				E76BBD5123DFB05200132B02 /* cross.png */,
@@ -243,6 +246,7 @@
 			files = (
 				E76BBD5423DFB05300132B02 /* cross.png in Resources */,
 				E76BBD2D23DFAF9A00132B02 /* LaunchScreen.storyboard in Resources */,
+				E76BBD5723E1055900132B02 /* tictactoe.gif in Resources */,
 				E76BBD5523DFB05300132B02 /* board.png in Resources */,
 				E76BBD2A23DFAF9A00132B02 /* Assets.xcassets in Resources */,
 				E76BBD2823DFAF9800132B02 /* Main.storyboard in Resources */,
